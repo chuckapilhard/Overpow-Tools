@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Local CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="assets/img/icon.png">
+
+    <title>Overpowered™</title>
+    <style> ::-webkit-scrollbar { display: none; } </style>
+
+  </head>
+<body>
+<!--Drag area-->
+<div class="drag"></div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+     <ul class="nav navbar-nav navbar-right">
+      <a href="index.html">
+      <li><img src="assets/img/icon.png" alt="OP" width="40" height="40"></li>
+    </a>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li> -->
+    </ul>
+  <!-- Links -->
+  <ul class="nav navbar-nav">
+        <!-- Dropdown -->
+    <li class="nav nav-item dropdown">
+      <a class="nav nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Tools
+      </a>
+      <div class="dropdown-menu">
+        <a id="toolsShow" class="dropdown-item" href="#">.ENT Generator</a>
+        <a id="customModulesShow" class="dropdown-item" href="#">Custom Modules</a>
+
+      </div>
+    </li>
+    <li class="nav-item">
+      <a id="howtoShow" class="nav nav-link" href="#">How-To</a>
+    </li>
+    <li class="nav-item">
+      <a id="supportShow" class="nav nav-link" href="#">Support</a>
+    </li>
+  </ul>
+  <div id="title-bar-btns">
+    <container id="menu-btns">
+       <button id="min-btn">𑁋</button>
+       <button id="max-btn">■</button>
+       <button id="close-btn">𝙓</button>
+     </container>
+
+  </div>
+</nav> <br> 
+<div class="nav-spacer"></div>
+
+
+<section id="home">
+
+  <center>
+  <div class="indexContent">
+  	<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Overpowered tools.</h1>      
+      <p>Our tools aim to make your work more efficent and save your precious time, <br>on top of that they are FREE to use! Try them out.<br>
+         <br>
+        <!-- Want to have these tools available offline? <br>
+        Click the "Download" button below! <span class="badge badge-info">NEW!</span><br><br>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='http://overpow.org/assets/downloads/Overpowered.exe'">
+          Download</button><br>
+          Version: 1.2.1
+        <br><br> -->
+    </div>
+  </div>
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/work.png" alt="work" width="800" height="400">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/free.png" alt="free" width="800" height="400">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/time.png" alt="time" width="800" height="400">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+   </div>
+  </div>
+  <br><br><br>
+  </center>
+
+</section>
+
+
+<section id="tools">
+    <div class="btn-group">
+    <button id="spawnsShow" type="button" class="btn">Spawns</button>
+    <button id="instancesShow" type="button" class="btn">Instances</button>
+    <button id="static-modelsShow" type="button" class="btn">Models</button>
+    <div class="btn-group">
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+        Classnames
+      </button>
+      <div class="dropdown-menu">
+        <a id="staticShow" class="dropdown-item" href="#">Static</a>
+        <a id="glassShow" class="dropdown-item" href="#">Glass</a>
+        <a id="buttonShow" class="dropdown-item" href="#">Button</a>
+        <a id="doorShow" class="dropdown-item" href="#">Door</a>
+      </div>
+    </div>
+    <button id="stairsShow" type="button" class="btn btn-info">Stairs</button>
+  </div> <br><br>
+
+      <div class="input-border">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Origin A</span>
+          </div>
+          <input id="x1" type="number" class="form-control" placeholder="000">
+          <input id="y1" type="number" class="form-control" placeholder="000">
+          <input id="z1" type="number" class="form-control" placeholder="000">
+      </div>
+    </div>
+
+      <div class="input-border">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Origin B</span>
+          </div>
+          <input id="x2" type="number" class="form-control" placeholder="000">
+          <input id="y2" type="number" class="form-control" placeholder="000">
+          <input id="z2" type="number" class="form-control" placeholder="000">
+      </div>
+    </div>
+      <br>
+    <div class="input-border">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Angles</span>
+          </div>
+          <input id="ax" type="number" class="form-control" placeholder="0">
+          <input id="ay" type="number" class="form-control" placeholder="0">
+          <input id="az" type="number" class="form-control" placeholder="0">
+      </div>
+    </div>
+
+      <br>
+    <div class="input-border">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Offsets</span>
+          </div>
+          <input id="ox" type="number" class="form-control" placeholder="x">
+          <input id="oy" type="number" class="form-control" placeholder="y">
+          <input id="oz" type="number" class="form-control" placeholder="z">
+      </div>
+    </div>
+    
+          <br> <br>
+    
+    <section id="stairs" class="stairs">
+        <span class="badge badge-dark">Stairs Mode</span>
+
+      <div class="props-border">
+        <center>
+      <div class="input-border">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputSelect">Direction</label>
+          </div>
+          <select class="custom-select" id="inputSelect">
+            <option selected id="x" value="x">x</option>
+            <option id="y" value="y">y</option>
+          </select>
+        </div>
+      </div>
+        <div class="input-border">
+          <div class="input-group mt-3 mb-3">
+            <input type="text" id="amount" class="form-control" placeholder="Amount">
+            <input type="text" id="forward" class="form-control" placeholder="Forward">
+            <input type="text" id="up" class="form-control" placeholder="Up">
+          </div>
+        </div>
+    </center>
+    </div>
+    </section>
+    <br>
+
+  <section id="spawns">
+      <div class="input-border">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Team</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected id="red" value="1">Red</option>
+            <option id="blue" value="2">Blue</option>
+            <option id="dm" value="0">Deathmatch</option>
+          </select>
+        </div>
+      </div>
+     <br> <button type="button" class="btn btn-success" onclick="main('spawns')">Generate</button>
+  </section>
+
+    <section id="instances">
+      <center>
+        <div class="input-border">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="instanceText">Instance</label>
+        <input id="instanceText" type="text" name="instances" list="instancesList" size="40" placeholder="ex: colombia/npc_jump1">
+          <datalist id="instancesList">
+                  <option id="colombia/npc_jump1">colombia/npc_jump1</option>
+                  <option id="generic/pickup_crate_armor">generic/pickup_crate_armor</option>
+                  <option id="generic/fence01">generic/fence01</option>
+                  <option id="test/bridge">test/bridge</option>
+                  <option id="hongkong/cover2">hongkong/cover2</option>
+          </datalist>
+        </div>
+      </div>
+        </center>
+        <br> <button type="button" class="btn btn-success" onclick="main('instances')">Generate</button>
+    </section>
+
+    <section id="models">
+      <div class="input-border">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Model Number *</span>
+        </div>
+        <input id="modelNum" type="number" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      </div>
+    </section>
+
+    <section id="static">
+      <br> <button type="button" class="btn btn-success" onclick="main('static')">Generate</button>
+    </section>
+
+    <section id="glass">
+      <br> <button type="button" class="btn btn-success" onclick="main('glass')">Generate</button>
+    </section>
+
+    <section id="properties">
+          <div class="props-border">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Properties</span>
+        </div>
+        <input id="target" type="text" class="form-control" placeholder="target">
+        <input id="speed" type="number" class="form-control" placeholder="speed">
+        <input id="lip" type="number" class="form-control" placeholder="lip">
+        <input id="wait" type="number" class="form-control" placeholder="wait">
+        <input id="hp" type="number" class="form-control" placeholder="health">
+        <input id="dmg" type="number" class="form-control" placeholder="dmg">
+      </div>
+    </div>
+    </section>
+
+    <section id="static-models"> 
+        <center>
+            <div class="input-border">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="static-modelsText">Model</label>
+            <input id="static-modelsText" type="text" name="static-models" list="static-modelsList" size="40" placeholder="ex: objects/airport/box_cart.md3">
+              <datalist id="static-modelsList">
+                      <option id="objects/airport/box_cart.md3">objects/airport/box_cart.md3</option>
+                      <option id="objects/finca/lamps/lightbulb1.md3">objects/finca/lamps/lightbulb1.md3</option>
+              </datalist>
+            </div>
+          </div>
+            </center>
+            <br> <button type="button" class="btn btn-success" onclick="main('static-models')">Generate</button>
+    </section>
+
+    <section id="button">
+      <br> <button type="button" class="btn btn-success" onclick="main('button')">Generate</button>
+    </section>
+
+    <section id="door">
+      <br> <button type="button" class="btn btn-success" onclick="main('door')">Generate</button>
+    </section>
+
+  <div class="form-group"> 
+  <label for="output">Output:</label>
+  <textarea class="form-control" rows="5" id="output" readonly></textarea> <br>
+  <button type="button" class="btn btn-secondary" onclick="copy()">Copy</button>
+  <button type="button" class="btn btn-danger" onclick="clearTxt()">Clear</button>
+  <br><br><br>
+</div>
+
+</section>
+
+<section id="customModules"> 
+    <div class="alert alert-warning" role="alert">
+        This feature is still experimental, backup your maps before using it!
+      </div>
+    <div class="input-border">
+      <!-- Presets selection -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect03">Presets</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect03">
+              <option selected id="hns-plat-cage">Platform with cage [h&s]</option>
+            </select>
+          </div>
+
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Origin</span>
+          </div>
+          <input id="x" type="number" class="form-control" placeholder="x">
+          <input id="y" type="number" class="form-control" placeholder="y">
+          <input id="z" type="number" class="form-control" placeholder="z">
+      </div>
+    </div>
+
+</section>
+
+
+<section id="howto">
+
+  <h1>Tools Guide</h1>
+  <button id="resizeWin" type="button" class="btn btn-secondary btn-sm">Optimal window size</button><br><br>
+<div class="howto">
+<h5>
+    Requirements:
+  </h5>
+  <li>
+  Text Editor (to edit the ".ent" map files, the ones that comes with your operating system will do (notepad, TextEdit etc..) <br>
+  but for comfortablity here are some I recommend:<br> 
+  <a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a>, <a href="https://www.sublimetext.com/" target="_blank">Sublime Text 3</a>, <a href="https://atom.io/" target="_blank">Atom</a> just pick one (Optional), they will all do the job.
+</li>
+<li>
+  Basic .ent editing knowledge you can start from this thread <a href="https://forums.3d-sof2.com/threads/first-editting-tutorial.402/" target="_blank">HERE</a> by @hansvanwillekom.
+</li> 
+<li>
+  English, I cannot speak arabic unfortunately, If someone can translate this, would be much appreciated.
+</li>
+<li>
+  The tools, I recommend downloading the <a href="http://overpow.org/assets/downloads/Overpowered.exe" target="_blank">desktop app</a> if you haven't already.
+  Also you can check the original post by @Splash  <a href="https://forums.3d-sof2.com/threads/official-map-ent-helping-website.4774/" target="_blank">HERE</a>, for update logs etc.. (first comment).
+</li>
+<hr>
+
+<h5>
+  Tools:
+</h5>
+  
+  Head over to Tools>.ENT Generator <br>
+  <img src="assets/img/1.JPG" alt="1"> <br><br>
+
+  now you should see a screen with a form to fill, no need to panic, I'll explain what each component does and how it works.<br>
+  so first, you see different buttons:<br>
+  <img src="assets/img/2.JPG" alt="2"> <br><br>
+  Clicking any of those will open addtional options for each component, now lets go over them:<br>
+  <li> Spawns: Spawn points for Red, Blue and Deathmatch teams. </li>
+  <li> Instances: These are "bspmodels" you can add to your map (like green boxes, fences etc...)</li>
+  <li> Models: Objects that you can see but has no collision ("model_static" classname) like Grass, Trees, Vehicles etc..</li>
+  <li> Classnames: These are basically objects that are embedded into the map, each has a unique number (See <a href="https://forums.3d-sof2.com/threads/second-tutorial-moving-models.1372/" target="_blank">THIS</a> thread also by @hansvanwillekom for more info).</li>
+  as for "Stairs", I will explain this later in this tutorial. <br> <br>
+
+  Now you see the main form: <br>
+  <img src="assets/img/3.png" alt="3"><br><br>
+  It is best to explain with an example:<br>
+  so I open my home-made or FTP 1fx server and get into a map in developer mode (type in console "devmap mapname") <br>
+  for this example I will use the map "inf.ent":<br>
+  <img src="assets/img/4.png" alt="4"><br><br>
+  Now this is where most people get confused, I'll try to apply some photoshop to make it a bit clearer.<br>
+  What you want to do, is visualize a rectangled box with 2 corners making it:<br>
+  <img src="assets/img/rectangle.png" alt="rect" height="300" width="300"><br><br>
+
+  so in-game you should get 2 positions with the command /viewpos each point will represent a corner of the rectangle:<br>
+  <img src="assets/img/5.jpg" alt="5"><br><br>
+  So you can fill in the origins A & B, If you want to follow this example:<br>
+  <u>Origin A:</u> (-175, -1160, 500)<br>
+  <u> Origin B:</u> (375, -362, 700)<br><br>
+
+  <u>Angles:</u><br>
+  (0, 0, 0)<br>
+  then you have the angles, they are used to rotate an object on its axes (roll - x, pitch - y & yaw - z)<br> 
+  from the center of the object, I'm not using any here (you can leave blank for 0).<br><br>
+
+  <u>Offsets:</u><br>
+  (64, 64, 64)<br>
+  An important step is setting the offsets, first let me explain what is an offset:<br>
+  Offset is the distance between the centers of objects on the corresponding axes.<br>
+  the Crates instance is 64*64*64 in size which means if i add 64 to each offset, I will get the exact distance between the crates,<br> 
+  if I increase it to lets say 200, 100, 64 it will look something like this:<br>
+  <img src="assets/img/6.png" alt="6"><br><br>
+  You can see that the middle is missing here, that is because the tool generate boxes only on the outline of the rectangle you created.<br>
+  also the shape will not shift, as you can see the rectangle size is the same, <br>
+  but because i increased the offsets (distance between models) it placed less boxes and more air between them.<br><br>
+
+  If you have come this far, you are pretty much done, the only thing thats left, is picking what you want to spawn into your rectangle,<br> 
+  I chose Instances> "generic/pickup_crate_armor"<br>
+  <img src="assets/img/7.png" alt="7"><br><br>
+  after that, you click on the <img src="assets/img/8.png" alt="8"> button and the code will appear below,<br> 
+  you can click the "Copy" button to copy the code and paste it into your .ent file<br>
+  Save and restart the map to see the changes!<br><br>
+  <hr>
+
+  <h5>Stairs:</h5>
+  I like to call this feature "Stair mode", <br>
+  behind the scenes what this does is duplicate the rectangle you've made and add addtional values each time, for example:<br>
+  I will use the same map and make a new shape (please note im not putting it in my ent file yet, this is just for example purposes)<br>
+  <img src="assets/img/9.png" alt="9"><br><br>
+  Direction: X/Y, basically the axes in which you want the next "staircase" to move on (x or y),<br>
+  In this case i wanna move it on the "X" axes which is towards the upper right corner of the picture<br>
+  Amount: How many duplicates of the specified rectangle you want? (defaults to "2"),<br>
+  my Amount will be "3" to create 3 duplicates.<br>
+  Forward: This is the same as "offset" but for the whole shape, lets say i have a 100*100 area full of boxes,<br> 
+  it will create a distance between the 100*100 areas Forward/Backward (positive or negative),<br>
+  I'll move it 300 forward (+x in this case).<br>
+  Up: Same as forward but for Up/Down (negative or positive),<br>
+  and ill move it up 400 (z+).<br>
+  this is how I end up:<br>
+  <img src="assets/img/10.png" alt="10"><br><br>
+
+  Obviously most poeple would use this tool for smaller platforms and probably 1-level platforms too, but in order for you to understand how this works<br>
+  I demonstrated it using a 3-Dimensional rectangle<br>
+  here's an example for a normal use of the "stairs" feature:<br>
+  <img src="assets/img/11.png" alt="11"><br><br>
+
+  <h4>The End!</h4>
+</div> <br>
+</section>
+
+
+<section id="support">
+	<h3>FAQ:</h3><br>
+  <div class="input-border">
+	<span class="badge badge-secondary">Q:</span> What is the best way to contact you? <br>
+  <div class="text-info">
+	<span class="badge badge-secondary">A:</span> Currently I'm recieving Emails at <mark>admin@overpow.org</mark> <b>or</b> you can post a reply to the <a href="https://forums.3d-sof2.com/threads/official-map-ent-helping-website.4774/" target="_blank">Original post</a> on 3D forums </div>
+	<br><br><br>
+  <span class="badge badge-secondary">Q:</span> Tool is broken! when I paste code in .ent file my server crashes! <br>
+  <div class="text-info">
+	<span class="badge badge-secondary">A:</span> It is probably due to an overpopulation error, too many entities, try generating less code by making the area smaller. </div>
+	<br><br><br>
+  <span class="badge badge-secondary">Q:</span> Where can I find editing tutorials?<br>
+  <div class="text-info">
+	<span class="badge badge-secondary">A:</span>I'd recommend checking out 3D sub forum <a href="https://forums.3d-sof2.com/forums/editing-tutorials.106/" target="_blank">Editing Tutorials</a> </div>
+	<br><br><br>
+  <span class="badge badge-secondary">Q:</span> Who are you, who made this tool?<br>
+  <div class="text-info">
+	<span class="badge badge-secondary">A:</span>My in-game name is "Snatch", my forum name is "Kawa" and I made this tool with some help from 3D forum members (Janno & Splash mainly).</div>
+</div>
+<br><br><br>
+</section>
+
+
+	<div class="footer">© overpowered - All Rights Reserved</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Local JavaScript -->
+    <script src="assets/js/tools.js"></script>
+    <script src="assets/js/style.js"></script>
+    <script>if (window.module) module = window.module;</script>
+  </body>
+</html>
